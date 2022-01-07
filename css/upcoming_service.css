@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* header */
+
+.header-image {
+    max-height: 54px;
+}
+
+.nav-item {
+    padding-right: 20px;
+    padding-top: 21px;
+    padding-bottom: 23px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.notification span {
+    background-color: #ff1616;
+    top: 20px;
+    right: 20px;
+}
+
+.vl {
+    border-left: 3px solid #FFFFFF;
+    height: 40px;
+}
+
+
+/* header */
+
+
+/* welcome */
+
+.welcome {
+    text-align: center;
+    font-size: 30px;
+    color: #4F4F4F;
+    background-color: #F9F9F9;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+/* welcome */
+
+
+/* main page start */
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.tab {
+    float: left;
+    border: 1px solid #ffffff;
+    background-color: #1d7a8c;
+    width: 23%;
+    font-weight: 400;
+}
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: #FFFFFF;
+    padding: 22px 16px;
+    width: 100%;
+    border: 1px solid #ffffff;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.tab button:hover {
+    background-color: #146371;
+}
+
+.tab button.active {
+    background-color: #146371;
+}
+
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 75%;
+    margin-left: 10px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background-color: #1d7a8c;
+    width: 35px;
+    float: left;
+}
+
+.hamburger .v-bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+th {
+    padding-right: 30px;
+}
+
+.cancel {
+    border: 1px solid #FF6B6B;
+    border-radius: 17px;
+    background-color: #FF6B6B;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+
+/* main page end */
+
+
+/* footer start */
+
+.footer {
+    background-color: #111111;
+    padding-top: 20px;
+}
+
+.footer .footer-menu {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #F1F1F1;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.footer .fb {
+    margin-right: 20px;
+}
+
+.footer .footer-end {
+    margin-top: 10px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #9BA0A3;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+
+/* footer end */
+
+@media(max-width: 600px) {
+    .main_service {
+        padding-top: 31px;
+    }
+    table {
+        border: 1px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+    }
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        text-align: left;
+    }
+    table td:last-child {
+        border-bottom: 0;
+        margin-bottom: 10px;
+    }
+    .vl {
+        height: 0%;
+        align-content: center;
+    }
+}
+
+@media(min-width: 600px) {
+    .main_service {
+        padding-top: 31px;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-bottom: 30px;
+    }
+}
+
+@media(max-width:720px) {
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active .v-bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .v-bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .v-bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .tab {
+        position: fixed;
+        left: -100%;
+        gap: 0;
+        background-color: #146371;
+        width: 90%;
+        text-align: center;
+        transition: 0.2s;
+    }
+    .tab.active {
+        left: 0;
+        position: relative;
+    }
+}

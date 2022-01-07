@@ -1,0 +1,132 @@
+.navbar-brand {
+    margin-top: 6px;
+    margin-left: 15px;
+}
+
+.title-faq {
+    width: 84px;
+    height: 43px;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #4F4F4F;
+    opacity: 1;
+    font-family: Roboto-Medium;
+    font-size: 36px;
+    margin-top: 32px;
+    margin-left: 738px;
+}
+
+.faq-image {
+    height: 50px;
+}
+
+.faq-line {
+    margin-top: 34px;
+    margin-left: 534px;
+    margin-right: 528px;
+    width: 498px;
+    height: 48px;
+    color: #646464;
+    font-size: 18px;
+    font-family: Roboto-Regular;
+}
+
+.faq-large-content {
+    margin-left: 308px;
+    font-size: 16px;
+    font-family: Roboto-Bold;
+    color: #646464;
+    text-align: left;
+    letter-spacing: 0px;
+}
+
+.faq-small-content {
+    margin-left: 345px;
+    margin-right: 321px;
+    font-size: 16px;
+    font-family: Roboto-Regular;
+    color: #646464;
+    text-align: left;
+    letter-spacing: 0px;
+}
+
+.col-customer {
+    background-color: #29626D;
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-left: 21%;
+    margin-top: 3%;
+    text-align: center;
+    padding: 7px;
+}
+
+.col-provider {
+    background-color: #F6F6F6;
+    color: #646464;
+    font-size: 24px;
+    margin-right: 25%;
+    margin-top: 3%;
+    text-align: center;
+    padding: 7px;
+}
+
+.button-style {
+    margin-top: 50px;
+    text-align: center;
+    width: 400px;
+    margin-left: 308px;
+}
+
+.button-style1 {
+    margin-top: 50px;
+    text-align: center;
+    width: 400px;
+    margin-right: 321px;
+}
+
+.button-title {
+    margin-top: 55px;
+    font-family: Roboto-Medium;
+    font-size: 18px;
+}
+
+.button-submit {
+    font-size: 14px;
+    font-family: Roboto-Regular;
+    color: #FFFFFF;
+    background-color: #FF7B6D;
+    border-radius: 20px;
+    border: none;
+    width: 88px;
+    height: 40px;
+    margin-left: 11px;
+    margin-bottom: 52px;
+}
+
+.button-search {
+    background: #F4F5F8 0% 0% no-repeat padding-box;
+    border: 1px solid #565656;
+    border-radius: 20px;
+    opacity: 1;
+    width: 233px;
+    height: 40px;
+    margin-left: 614px;
+    margin-bottom: 52px;
+}
+
+.footer-menu {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #F1F1F1;
+    font-size: 14px;
+    font-family: Roboto-Regular;
+}
+
+.footer-end {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #9BA0A3;
+    font-size: 14px;
+    font-family: Roboto-Regular;
+    padding-bottom: 5px;
+}
