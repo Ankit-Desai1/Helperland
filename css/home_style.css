@@ -294,10 +294,6 @@ body {
     padding: 0 22px;
 }
 
-.our-news-letter .form-row .form-control:focus {
-    box-shadow: none;
-}
-
 .our-news-letter .btn-wrapper {
     margin-left: 11px;
 }
@@ -342,8 +338,6 @@ body {
 
 .footer .footer-end {
     margin-top: 10px;
-    text-align: left;
-    letter-spacing: 0px;
     color: #9BA0A3;
     font-size: 14px;
     font-weight: 400;

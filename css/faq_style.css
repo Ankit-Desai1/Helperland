@@ -66,7 +66,6 @@ body {
     background-color: #29626D;
     color: #FFFFFF;
     font-size: 24px;
-    /* margin-left: 21%; */
     margin-top: 3%;
     text-align: center;
     padding: 7px;
@@ -76,54 +75,54 @@ body {
     background-color: #F6F6F6;
     color: #646464;
     font-size: 24px;
-    /* margin-right: 25%; */
     margin-top: 3%;
     text-align: center;
     padding: 7px;
 }
 
-.button-style {
-    margin-top: 50px;
-    text-align: center;
-    width: 400px;
-    margin-left: 308px;
+.our-news-letter {
+    padding-bottom: 55px;
 }
 
-.button-style1 {
-    margin-top: 50px;
-    text-align: center;
-    width: 400px;
-    margin-right: 321px;
+.our-news-letter .container {
+    position: relative;
+    max-width: 1420px;
 }
 
-.button-title {
-    margin-top: 55px;
-    font-family: Roboto-Medium;
+.our-news-letter h2 {
+    color: #353548;
     font-size: 18px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 16px;
 }
 
-.button-submit {
+.our-news-letter .form-row .form-control {
+    border-radius: 20px;
+    border: solid 1px #565656;
+    background-color: #f4f5f8;
+    color: #565656;
     font-size: 14px;
-    font-family: Roboto-Regular;
-    color: #FFFFFF;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 22px;
+}
+
+.our-news-letter .btn-wrapper {
+    margin-left: 11px;
+}
+
+.submit {
     background-color: #FF7B6D;
+    font-size: 14px;
+    line-height: 37px;
+    height: 40px;
     border-radius: 20px;
     border: none;
+    outline: none;
+    color: #fff;
     width: 88px;
-    height: 40px;
-    margin-left: 11px;
-    margin-bottom: 52px;
-}
-
-.button-search {
-    background: #F4F5F8 0% 0% no-repeat padding-box;
-    border: 1px solid #565656;
-    border-radius: 20px;
-    opacity: 1;
-    width: 233px;
-    height: 40px;
-    margin-left: 614px;
-    margin-bottom: 52px;
+    transition: 0.3s all;
 }
 
 .footer {
@@ -153,8 +152,6 @@ body {
 }
 
 .footer-end {
-    text-align: left;
-    letter-spacing: 0px;
     color: #9BA0A3;
     font-size: 14px;
     padding-bottom: 5px;
