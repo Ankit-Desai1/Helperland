@@ -1,0 +1,118 @@
+CREATE DATABASE Helperland
+
+/* Customer Table */
+
+CREATE TABLE Customer
+(
+ID INT AUTO_INCREMENT NOT NULL PRIMARY KEY , 
+Firstname VARCHAR(30) NOT NULL ,
+Lastname VARCHAR(30) NOT NULL ,
+Email_id VARCHAR(30) NOT NULL UNIQUE,
+Phone_no VARCHAR(15) NOT NULL UNIQUE,
+Birthdate DATE ,
+Language VARCHAR(10),
+Password VARCHAR(30) NOT NULL
+)
+
+/* Service Provider Table */
+
+CREATE TABLE Service_provider
+(
+ID INT AUTO_INCREMENT NOT NULL PRIMARY KEY , 
+Firstname VARCHAR(30) NOT NULL ,
+Lastname VARCHAR(30) NOT NULL ,
+Email_id VARCHAR(30) NOT NULL UNIQUE,
+Phone_no VARCHAR(15) NOT NULL UNIQUE,
+Birthdate DATE ,
+Nationality VARCHAR(10),
+Gender CHAR(1) NOT NULL,
+Avtar MEDIUMBLOB,
+House_no INT,
+Address VARCHAR(50),
+Postal_code VARCHAR(10),
+City VARCHAR(10),
+Status TINYINT NOT NULL,
+Password VARCHAR(30) NOT NULL,
+Radius INT 
+)
+
+/* Admin Table */
+
+CREATE TABLE Admin
+(
+ID INT AUTO_INCREMENT NOT NULL PRIMARY KEY , 
+Name VARCHAR(30) NOT NULL ,
+Email_id VARCHAR(30) NOT NULL UNIQUE,
+Password VARCHAR(30) NOT NULL
+)
+
+/* Customer address Table */
+
+CREATE TABLE Customer_address
+(
+ID INT AUTO_INCREMENT NOT NULL PRIMARY KEY ,
+customer_ID INT NOT NULL,
+House_no INT,
+Address VARCHAR(50),
+Postal_code VARCHAR(10),
+City VARCHAR(50),
+Phone_no VARCHAR(15) NOT NULL,
+FOREIGN KEY FK_customer (customer_ID) REFERENCES customer(ID)
+)
+
+/* Status Table */
+
+CREATE TABLE Status
+(
+ID INT NOT NULL PRIMARY KEY , 
+Name VARCHAR(20)
+)
+
+/* Service Table */
+
+CREATE TABLE Service
+(
+Service_ID INT AUTO_INCREMENT NOT NULL PRIMARY KEY , 
+Customer_ID INT NOT NULL,
+Service_provider_ID INT NOT NULL,
+Date DATE NOT NULL ,
+Start_time TIME NOT NULL,
+Duration TIME NOT NULL,
+Extra_service VARCHAR(50),
+Comment VARCHAR(50) ,
+Pet BIT NOT NULL,
+Total_price FLOAT NOT NULL,
+Address_id INT NOT NULL,
+Status INT NOT NULL,
+FOREIGN KEY FK_Customer_id(Customer_ID) REFERENCES Customer(ID),   
+FOREIGN KEY FK_Service_provider(Service_provider_ID) REFERENCES service_provider(ID),
+FOREIGN KEY FK_address(Address_id) REFERENCES customer_address(ID),
+FOREIGN KEY FK_status(Status) REFERENCES Status(ID)
+)
+
+/* Service Provider Rating Table */
+
+CREATE TABLE Rating
+(
+Rating_ID INT AUTO_INCREMENT NOT NULL PRIMARY KEY , 
+Customer_ID INT NOT NULL,
+Service_provider_ID INT NOT NULL,
+Service_id INT NOT NULL,
+Rating FLOAT NOT NULL ,
+Comment VARCHAR(50),
+FOREIGN KEY FK_Service_providerid(Service_provider_ID) REFERENCES service_provider(ID),
+FOREIGN KEY FK_customersid(Customer_ID) REFERENCES customer(ID),
+FOREIGN KEY FK_Serviceid(Service_id) REFERENCES service(Service_ID)
+)
+
+/* Favourite table */
+
+CREATE TABLE Favourite
+(
+ID INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+Customer_ID INT NOT NULL,
+Service_provider_ID INT NOT NULL,
+FOREIGN KEY FK_customers_id(Customer_ID) REFERENCES customer(ID),
+FOREIGN KEY FK_Serviceproviderid(Service_provider_id) REFERENCES service_provider(ID)
+)
+
