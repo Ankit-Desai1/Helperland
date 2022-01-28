@@ -21,6 +21,10 @@ body {
     background-color: #29626D;
 }
 
+.img_logo {
+    max-height: 54px;
+}
+
 .title-faq {
     letter-spacing: 0px;
     color: #4F4F4F;
